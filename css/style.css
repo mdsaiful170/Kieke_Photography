@@ -1,0 +1,165 @@
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+:root {
+    --blue-color: #8a47f6;
+    --back-color: #333333;
+    --primary-color: #fe8c45;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    text-transform: capitalize !important;
+    color: var(--back-color);
+    transition: 0.3s all line !important;
+    
+}
+
+h1,h2,h3,h4,h5,h6 ,.font-poppins{
+    font-family: "Poppins", sans-serif !important;  
+}
+html {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth !important;
+}
+
+.font-nexa {
+    font-family: "Nexa", sans-serif !important;
+}
+
+/* QUICKSEND  */
+.font-quicksand{
+    font-family: "Quicksand", sans-serif;
+
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color) !important;
+    border-radius: 5rem;
+}
+
+.btn {
+    /* letter-spacing: .1rem !important; */
+    border: none !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+.text-primary {
+    color: var(--blue-color) !important;
+}
+.btn-primary-2 {
+    background-color: var(--blue-color) !important;
+}
+.btn-primary {
+    background-color: var(--primary-color) !important;
+}
+
+/* background css  */
+.bg-primary {
+    background-color: var(--blue-color) !important;
+}
+
+/* ----------navbar css  */
+.nav-box .navbar-nav a.nav-link {
+    font-size: 18px !important;
+    color: var(--back-color) !important;
+}
+.nav-box .navbar-nav a.nav-link.active {
+    color: var(--primary-color) !important;
+    background: none !important ;
+}
+
+/* swiper-pagination css  */
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important;
+}
+span.swiper-pagination-bullet {
+    width: 1.5rem !important;
+    height: 0.4rem !important;
+    border-radius: 2px !important;
+}
+
+/* navtab css  */
+
+.nav-tab-box .nav-item a.nav-link {
+    color: var(--back-color) !important;
+    /* font-size: 20px; */
+}
+
+.nav-tab-box .nav-item a.nav-link.active {
+    color: var(--blue-color) !important;
+    background: none !important;
+    text-decoration: underline !important;
+}
+
+/* our gallery css  */
+
+.gallery-box {
+    columns: 3 auto !important;
+    -webkit-columns: 3 auto;
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+}
+.gallery-box .box {
+    -webkit-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+
+
+/* price css  */
+
+.price .price-row .price-box {
+    cursor: pointer;
+    transition: .7s !important;
+}
+.price .price-row .price-box:hover {
+    background-color: #222222 !important;
+    transform: scale(1.03);
+}
+.price .price-row .price-box:hover > * {
+    color: #fff !important;
+    transition: .5s ;
+}
+.price .price-row .price-box:hover .btn{
+    background-color: #fff !important;
+    transition: .3s;
+}
+
+.price .price-row .price-box:hover .btn small{
+ color: #333333 !important;
+}
+/* =====responsive font size css  */
+
+.btn-md-sqare{
+    width: 30px !important;
+    height: 40px !important;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 75% !important;
+    }
+}
+@media (max-width: 769px) {
+    html {
+        font-size: 88% !important;
+    }
+    .gallery-box {
+        columns: 2 auto !important;
+    }
+
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 80% !important;
+       
+    }
+  
+}
